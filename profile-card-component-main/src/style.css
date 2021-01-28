@@ -1,6 +1,6 @@
 @font-face {
     font-family: KSans;
-    src: url(/src/KumbhSans-Regular.ttf);
+    src: url(./KumbhSans-Regular.ttf);
     font-weight: 400, 700;
 }
 @media screen and (min-width: 375px) {
@@ -71,7 +71,7 @@ main .card {
 
 .top-card {
     position: absolute;
-    background-image: url(/images/bg-pattern-card.svg);
+    background-image: url(../images/bg-pattern-card.svg);
     width: 20rem;
     height: 8rem;
     top: 0;
@@ -84,7 +84,7 @@ main .card {
     width: 5.5rem;
     border: solid 5px #fff;
     border-radius: 100%;
-    background-image: url(/images/image-victor.jpg);
+    background-image: url(../images/image-victor.jpg);
     background-size: 5.4rem;
     top: 5rem;
     overflow: hidden;
