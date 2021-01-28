@@ -1,0 +1,157 @@
+@font-face {
+    font-family: KSans;
+    src: url(/src/KumbhSans-Regular.ttf);
+    font-weight: 400, 700;
+}
+@media screen and (min-width: 375px) {
+    body {width: auto;}
+    .card {width: 18rem;}
+    .top-card {width: 18rem;}
+    .header-card {width: 18rem;}
+    .footer-card {width: 18rem;}
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    font-family: KSans, sans-serif;
+    font-size: 18px;
+}
+.wrapper{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+main{
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 9rem;
+}
+
+main .card {
+    display: grid;
+    place-items: center;
+    background-color: #eee;
+    width: 20rem;
+    height: 21.7rem;
+    border-radius: 5%;
+    position: relative;
+}
+.card::before, 
+.card::after {
+    content: '';
+    border-radius: 100%;
+    width: 54.4rem;
+    height: 54.4rem;
+    position: absolute;
+    z-index: -1;
+}
+.card::before {
+    top: -45rem;
+    left: -40rem;
+    transform: rotate(30deg);
+    background: #4CEBDB;
+    background: -webkit-radial-gradient(ellipse farthest-side at top right, #14cab8 25%, #19A2AE 100%);
+    background: -moz-radial-gradient(ellipse farthest-side at top right, #14cab8 25%, #19A2AE 100%);
+    background: radial-gradient(ellipse farthest-side at top right, #14cab8 25%, #19A2AE 100%);
+}
+.card::after {
+    bottom: -45rem;
+    right: -40rem;
+    background: #4CEBDB;
+    background: -webkit-radial-gradient(ellipse farthest-side at top left, #14cab8 25%, #19A2AE 100%);
+    background: -moz-radial-gradient(ellipse farthest-side at top left, #14cab8 25%, #19A2AE 100%);
+    background: radial-gradient(ellipse farthest-side at top left, #14cab8 25%, #19A2AE 100%);
+}
+
+.top-card {
+    position: absolute;
+    background-image: url(/images/bg-pattern-card.svg);
+    width: 20rem;
+    height: 8rem;
+    top: 0;
+    left: 0;
+    border-radius: 1rem 1rem 0 0;
+}
+.photo-card {
+    position: absolute;
+    height: 5.5rem;
+    width: 5.5rem;
+    border: solid 5px #fff;
+    border-radius: 100%;
+    background-image: url(/images/image-victor.jpg);
+    background-size: 5.4rem;
+    top: 5rem;
+    overflow: hidden;
+}
+
+.header-card b, .footer-card b {
+    color: hsl(229, 23%, 23%);
+}
+.header-card, .footer-card{
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+.header-card small{
+    font-size: 70%;
+}
+.header-card {
+    position: relative;
+    top: 10rem;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+
+}
+hr {
+    width: 99%;
+    position: relative;
+    bottom: 1rem;
+    border: solid -1px hsl(0, 0%, 59%);;
+}
+
+.footer-card {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 10fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(25px, auto);
+}
+.footer-card small {
+    font-size: 50%;
+}
+.footer-card div {
+    width: 4rem;
+}
+.followers b{
+    grid-column: 1;
+    grid-row: 1;
+}
+.likes b{
+    grid-column: 1;
+    grid-row: 2;
+}
+.photos b{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

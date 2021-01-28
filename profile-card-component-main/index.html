@@ -7,29 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
-
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="stylesheet" href="../normalize.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="wrapper">
+    <main>
+      <div class="card">
+        <div class="top-card"></div>
+        <div class="photo-card"></div>
+          <div class="header-card">
+              <b>Victor Crest</b> 26
+                <small>London</small>
+          </div>
+          <hr>
+          <div class="footer-card">
+            <div class="followers">
+              <b>80K</b>
+              <small>Followers</small>
+            </div>
+            <div class="likes">
+              <b>803K</b>
+              <small>Likes</small>
+            </div>
+            <div class="photos">
+              <b>1.4K</b>
+              <small>Photos</small>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        <p>
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Luis CDR</a>.
+        </p>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
